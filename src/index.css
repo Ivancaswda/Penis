@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.app{
+  width: 80%;
+  margin: auto;
+}
+@keyframes fadeIn  {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+
+}
+.burger-button {
+  display: none;
+}
+@media (max-width: 1050px) and (min-width: 500px) {
+  .navbar-right .search-iconn {
+    display: none;
+  }
+
+
+  .logo-div-cafe h1{
+    font-size: 24px;
+  }
+
+  .logo-div-cafe svg {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar-menu a {
+    font-size: 13px;
+  }
+  .modal-content {
+    max-width: 500px;
+  }
+  .explore-menu h1{
+    font-size: 25px;
+  }
+
+}
+@media (max-width: 1050px) and (min-width: 800px) {
+    .food-item {
+      width: 85%;
+    }
+}
+@media (max-width: 800px) and (min-width: 500px) {
+  .navbar-menu {
+    display: none;
+  }
+  .burger-button {
+    display: block;
+  }
+  .app {
+    width: 86%;
+  }
+  .cart-promocode-input button {
+    width: max(3vw, 80px);
+  }
+  .cart-promocode-input input {
+    width: clamp(130px, 130px, 160px);
+  }
+  .cart-bottom {
+    gap: max(2vw, 2px);
+  }
+  .cart-promocode div p {
+    font-size: 13px;
+  }
+  .cart-total-details p {
+    font-size: 11px;
+  }
+  .cart-total h2 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+  .logo-div-cafe h1{
+    font-size: 18px;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .burger-button {
+    display: block;
+  }
+  .app {
+    width: 86%;
+  }
+  .cart-promocode-input button {
+    width: max(3vw, 50px);
+    padding: 8px 8px 8px 8px;
+    font-size: 11px;
+  }
+  .cart-promocode-input input {
+    width: clamp(90px, 100px, 110px);
+  }
+  .cart-bottom {
+    gap: max(8vw, 8px);
+  }
+  .cart-promocode div p {
+    font-size: 10px;
+  }
+  .cart-total-details p {
+    font-size: 10px;
+  }
+  .cart-total h2 {
+    font-size: 17px;
+  }
+  .cart-total {
+    width: 105px;
+  }
+  .cart-total button {
+    width: max(11vw, 120px);
+    padding: 9px 0;
+    font-size: 8px;
+  }
+  .place-order-left .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .place-order-left input {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+.left-door-component-class {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Заставляет контейнер занимать всю высоту окна */
+}
+
+.grid-door-footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+.grid-door-footer-container p {
+    font-size: 10px;
+    transition: border-bottom-color 500ms ease-in-out;
+}
+.grid-door-footer-container p:hover {
+    border-bottom-color:  blue;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.second-part-of-door-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
